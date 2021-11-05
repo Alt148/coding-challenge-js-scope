@@ -1,7 +1,8 @@
 const arr = [10, 12, 15, 21, 34];
 
 for (var i = 0; i < arr.length; i++) {
-  setTimeout(() => {
+  const output = (i) => {
     console.log(`The index of ${arr[i]} this number is: ${i}`);
-  }, 1000);
+  };
+  setTimeout(output(i), 1000);
 }
